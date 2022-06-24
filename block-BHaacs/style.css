@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* my reset */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.padding {
+    padding: 4rem 0;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+} 
+.flex-42 {
+    flex: 0 1 42%;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+
+
+/* custom styles */
+
+.header {
+    background-color: rgb(89,192,195);
+    padding: 1rem 0;
+}
+#show-nav-menus {
+    display: none;
+}
+#show-menu {
+    display: none;
+}
+.logo {
+    font-size: 1.5rem;
+    color: white;
+}
+.nav-menu a {
+    margin-left: 0.5rem;
+    color: white;
+}
+
+/* hero */
+.hero {
+    background-color: rgb(89,192,195);
+    position: relative;
+    height: 85vh;
+}
+.hero-content {
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    border: none;
+}
+.hero img {
+    position: absolute;
+    top: 130px;
+    left: 170px;
+}
+
+/* download */
+
+.download-files {
+    margin-top: 15rem;
+}
+
+a[href*= "#.pdf"], a[href*="#.doc"], a[href*="#.jpeg"], a[href*="#.mp4"] {
+    display: flex;
+    align-items: center;
+    color: #BDC8E0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 2.5rem;
+    
+}
+.files-container img {
+    margin-right: 1rem;
+    width: 1.5rem;
+}
+
+/* statistics */
+
+#statistics h2{
+    font-size: 2.5rem;
+    color: #283D7E;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 1.2rem;
+}
+#statistics p {
+    color: #BDC8E0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+}
+.arrow-btn {
+    padding: 0.8rem 2rem;
+    background-color:rgb(89,192,195) ;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* schedule */
+
+#schedule h2{
+    text-align: center;
+    color: #283D7E;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+table {
+    width: 100%;
+    text-align: left;
+    /* padding: 1rem 0 1rem 1rem; */
+}
+th {
+    background-color: rgb(89,192,195);
+    padding: 1rem 0 1rem 1rem; 
+}
+th:first-child{
+    border-top-left-radius: 5px;
+}
+th:last-child {
+    border-top-right-radius: 5px;
+}
+#schedule tbody td{ 
+    border: 1px solid grey;
+    color: gray;
+    padding: 1rem 0 1rem 1rem;
+}
+tr:nth-child(2n) {
+    background-color: #D5E6E6;
+}
+
+/* pricing */
+
+#pricing h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #283D7E;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    margin: 2rem 0;
+}
+.switch-container{
+    width: 6rem;
+    height: 3rem;
+    background: #BBECEC;
+    border-radius: 1.6rem;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 .5rem;
+}
+.toggle-btn{
+    width: 2.1rem;
+    height: 2.1rem;
+    background: #5CC0C3;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: .2rem;
+    height: 1rem;
+    background: #fff;
+   
+}
+
+.pricing-card {
+    padding: 2rem 1.7rem;
+    border: 5px solid #E8EFFC;
+    border-radius: 10px;
+}
+.pricing-card h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #283D7E;
+    padding-bottom: 2.5rem;
+}
+.pricing-card p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #6f7d99;
+    padding-bottom: 2rem;
+}
+.pricing-card h4 {
+    text-align: center;
+    color: #5CC0C3;
+    font-size: 4rem;
+}
+.pricing-card h4::before {
+    content: "$";
+    color: #5CC0C3;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.pricing-card h4::after {
+    content: "/Month";
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: #6f7d99;
+}
+.pricing-card hr {
+    border: 1px solid #E8EFFC;
+}
+.pricing-card li {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+#pricing .cross::before {
+    content: url(./assets/cross.png);
+}
+.cross {
+    color: #6f7d99;
+}
+.pricing-card li::before {
+    content: url(./assets/tick.png);
+    margin-right: 1rem;
+}
+
+.pricing-card .btn {
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 2rem;
+    border: 2px solid #E8EFFC;
+    border-radius: 5px;
+    color: #283D7E;
+}
+
+.pricing-card .active-btn {
+    background-color: #5CC0C3;
+    color: white;
+}
+
+/* start-trail */
+
+.start-trial {
+    text-align: center;
+    background-color: #5CC0C3;
+    padding: 3rem 0;
+    border-radius: 2rem;
+}
+.start-trial h4 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.start-trial .btn {
+    padding: 1rem 4rem;
+    color: #283D7E;
+    font-size: 1.3rem;
+}
+
+/* contact */
+
+.col h4 {
+    font-size: 2rem;
+    color: #283D7E;
+    padding-bottom: 1.5rem;
+}
+.col p {
+    color: #6f7d99;
+    font-size: 1.5rem;
+}
+.links li {
+    padding-bottom: 1rem;
+}
+.col address p {
+    padding-top: 1rem;
+}
+.col a:nth-child(n) {
+    color: #6f7d99;
+    font-size: 1.5rem;
+}
+.social-links-container {
+    display: flex;
+    padding-top: 2.2rem;
+}
+.social-link i {
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: #5CC0C3;
+    color: white;
+    margin-right: 1.3rem;
+}
+
